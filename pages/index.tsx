@@ -1,11 +1,14 @@
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import {Htag} from "../components/Htag/Htag";
+import {Button} from "../components";
 
 export default function Home(): JSX.Element {
   return (
-    <div>
+    <>
       <Htag tag="h1">Text</Htag>
-    </div>
-  );
+        <Button appearance='primary'>Hello</Button>
+        <Button appearance='ghost'>Hello People yoyo</Button>
+    </>
+  )
 }
