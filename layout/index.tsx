@@ -8,16 +8,14 @@ import Footer from "./Footer";
 
 function Layout({children}: LayoutPropsTypes): JSX.Element {
     return (
-       <>
-       <Header />
-           <div>
-               <SideBar />
-               <div>
+       <div className={s.wrapper}>
+       <Header className={s.header} />
+               <SideBar className={s.sidebar}/>
+               <div className={s.body}>
                    {children}
                </div>
-           </div>
-           <Footer />
-       </>
+           <Footer className={s.footer}/>
+       </div>
         )
 };
 
