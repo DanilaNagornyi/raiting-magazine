@@ -2,6 +2,7 @@ import {Htag} from "../components/Htag/Htag";
 import {Button} from "../components/Button/Button";
 import PTag from "../components/PTag";
 import Tag from "../components/Tag";
+import Rating from "../components/Rating";
 
 export default function Home(): JSX.Element {
   return (
@@ -12,6 +13,7 @@ export default function Home(): JSX.Element {
         <PTag size="medium">Test props in p</PTag>
         <Tag color="primary" size='small'>Primary</Tag>
         <Tag color="green" size='medium'>Green</Tag>
+        <Rating rating={4} />
     </>
   )
 }
