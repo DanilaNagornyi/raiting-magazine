@@ -3,7 +3,7 @@ import {PTagPropsTypes} from "./types";
 import cn from "classnames";
 import s from "./P.module.scss";
 
-export default function PTag({size = "medium", children, className, ...props}: PTagPropsTypes): JSX.Element {
+export default function PTag({size = "medium", href, children, className, ...props}: PTagPropsTypes): JSX.Element {
     return (
         <p className={cn(s.p, className, {
         [s.small]: size === "small",
@@ -11,7 +11,8 @@ export default function PTag({size = "medium", children, className, ...props}: P
         [s.large]: size === "large",
     })}
         {...props}
-    >
-        {children}
+    >{
+        href ? <a href={href} target="_blank">{children}</a> : <>{children}</>
+    }
     </p>)
 };
