@@ -1,12 +1,11 @@
 import React from "react";
 import {SideBarPropsTypes} from "./types";
-import cn from "classnames";
-import s from "./SideBar.module.scss";
+import Menu from "../Menu";
 
 export default function SideBar({...props}: SideBarPropsTypes): JSX.Element {
     return (
        <div {...props}>
-           SideBar
+           <Menu />
        </div>
         )
 };
