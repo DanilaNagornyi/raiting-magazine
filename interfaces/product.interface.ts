@@ -22,13 +22,13 @@ export interface ProductModelTypes {
     credit: number;
     oldPrice: number;
     description: string;
-    characteristics: ProductCharacteristictypes[];
+    characteristics: ProductCharacteristicTypes[];
     createdAt: Date;
     updatedAt: Date;
     __v: number;
     image: string;
     initialRating: number;
-    reviews: ReviewModel[];
+    reviews: ReviewModelTypes[];
     reviewCount: number;
     reviewAvg?: number;
     advantages?: string;

@@ -4,7 +4,7 @@ import axios from 'axios';
 import {MenuItemTypes} from "../../interfaces/menu.interface";
 import {TopPageModelTypes} from "../../interfaces/page.interface";
 import {ParsedUrlQuery} from "querystring";
-import {ProductModelTypes} from "../../interfaces/product.interfac";
+import {ProductModelTypes} from "../../interfaces/product.interface";
 
 
 interface CoursePropsTypes extends Record<string, unknown>{
