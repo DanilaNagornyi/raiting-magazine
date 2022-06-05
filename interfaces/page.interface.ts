@@ -20,7 +20,7 @@ export interface HhDataTypes {
     updatedAt: Date;
 }
 
-export interface TopPageModalTypes {
+export interface TopPageModelTypes {
     tags: string[];
     _id: string;
     secondCategory: string;

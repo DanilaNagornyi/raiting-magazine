@@ -1,3 +1,5 @@
+import {TopLevelCategoryTypes} from "./page.interface";
+
 export interface PageItemTypes {
     alias: string;
     title: string;
@@ -10,4 +12,11 @@ export interface MenuItemTypes {
         secondCategory: string;
     };
     pages: PageItemTypes[];
+}
+
+export interface FirstLevelMenuItemTypes {
+    route: string;
+    name: string;
+    icon: JSX.Element;
+    id: TopLevelCategoryTypes;
 }
