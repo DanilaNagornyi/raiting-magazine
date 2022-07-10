@@ -20,7 +20,7 @@ function Home({menu, firstCategory}: HomePropsTypes): JSX.Element {
   return (
     <>
       <Htag tag="h1">Text</Htag>
-          <Button appearance='primary' arrow='right'>Hello</Button>
+        <Button appearance='primary' arrow='right'>Hello</Button>
         <Button appearance='ghost' arrow='right'>Hello People yoyo</Button>
         <PTag size="medium">Test props in p</PTag>
         <Tag color="primary" size='small'>Primary</Tag>
@@ -28,10 +28,10 @@ function Home({menu, firstCategory}: HomePropsTypes): JSX.Element {
         <Rating rating={rating} isEditable setRating={setRating} />
         {/* */}
     </>
-  )
+  );
 }
 
-export default withLayout(Home)
+export default withLayout(Home);
 
 export const getStaticProps: GetStaticProps<HomePropsTypes> = async () => {
     const firstCategory = 0;
@@ -43,6 +43,6 @@ export const getStaticProps: GetStaticProps<HomePropsTypes> = async () => {
             menu,
             firstCategory
         }
-    }
-}
+    };
+};
 
